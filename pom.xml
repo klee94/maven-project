@@ -158,6 +158,19 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
         </plugin>
+               
+        <plugin>
+         <groupId>org.owasp</groupId>
+         <artifactId>dependency-check-maven</artifactId>
+         <version>3.6.0</version>
+         <executions>
+           <execution>
+             <goals>
+                <goal>check</goal>
+             </goals>
+           </execution>
+         </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
